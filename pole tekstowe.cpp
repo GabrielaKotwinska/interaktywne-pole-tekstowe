@@ -86,7 +86,7 @@ int main() {
         else if (GetAsyncKeyState(VK_RIGHT) & 0x8000) { // prawa strzałka
             moveCursorRight(cursorX, text.length(), WIDTH);
         }
-        else if (text.length() < WIDTH - 2 && cursorX < WIDTH - 3) { // Sprawdź czy długość tekstu nie przekracza szerokości pola, a kursor nie jest na skraju
+        else if (text.length() < WIDTH - 2 && cursorX < WIDTH - 3) { 
             text.insert(cursorX, 1, input);
             cout << input;
             cursorX++;
